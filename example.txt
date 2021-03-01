@@ -1,0 +1,7 @@
+Enter text: The quick brown fox jumps over the lazy dog.
+
+------------------------------------------------------------------------------
+
+Encryption: B2A60F99EC2D6FEFD10C8302DE8D97852EBBD48B11227621A849B50731855664E4B97852A93AC379A5874125
+
+Key: ^8^D\j2^5q~l7?t}TxBO;s%`6Wm=E{>}dk)\#nfe/U)U|#PF[&Hb`6[XsU"FTb-%n*Gd[Vl=D_7CKRw$@*
