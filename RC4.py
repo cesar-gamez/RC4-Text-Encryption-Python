@@ -32,22 +32,22 @@ def PRGA(s):
 
         yield s[(s[i] + s[j]) % 256]
 
-def RC4_encrypt(key):
+def RC4(key):
     s = KSA(key)
     return PRGA(s)
 
-
-
-if __name__ == '__main__':
+def hex_conversion():
     plain_text = input('Enter text: ')
     key = generate_key()
     key_list = prepare_key(key)
-    key_stream = RC4_encrypt(key_list)
+    key_stream = RC4(key_list)
 
     #XOR bitwise operation
     cypher_text = ''
     for char in plain_text:
         cypher_text += "%02X" % (ord(char) ^ next(key_stream))
 
-    print('Encryption: ' + cypher_text)
-    print('Key: ' + key)
+    return 'Encryption: ' + cypher_text + '\n' + 'Key: ' + key
+
+if __name__ == '__main__':
+    print(hex_conversion())
